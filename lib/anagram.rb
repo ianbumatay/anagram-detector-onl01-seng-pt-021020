@@ -21,8 +21,8 @@ class Anagram
 
 
 def match(words)
-  
-  words.each {|word| @words == word}
+
+  words.each {|word| @words.split(" ") == word.split(" ")}
 
 end
 
