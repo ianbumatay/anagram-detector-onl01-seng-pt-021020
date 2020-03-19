@@ -26,7 +26,7 @@ def match(words_array)
 
     words_array.each do |word|
       @word.split(" ").sort == word.split(" ").sort
-      new =array << word
+      new_array << word
   end
 end
 
