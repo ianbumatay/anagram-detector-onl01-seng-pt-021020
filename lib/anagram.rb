@@ -9,6 +9,11 @@ class Anagram
   def initializ(name)
     @name = name
     @words = word
+    @@all < self
+  end
+
+  def self.all
+    @@all
   end
 
 
@@ -22,7 +27,9 @@ class Anagram
 
 
 def self.match(words)
-  
+  words.each do |word| word == words
+  end
+end
 
 
 end
