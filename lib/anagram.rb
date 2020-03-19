@@ -2,19 +2,13 @@
 
 class Anagram
 
-  @@all= []
+  attr_accessor :words
 
-  attr_accessor :name, :words
-
-  def initializ(name)
-    @name = name
-    @words = word
-    @@all < self
+  def initializ
+  @words = word
   end
 
-  def self.all
-    @@all
-  end
+
 
 
 
@@ -26,9 +20,10 @@ class Anagram
 # of letters using some_word.split(""). You can compare two arrays using the ==. For example:
 
 
-def self.match(words)
-  words.each do |word| word == words
-  end
+def match(words)
+  
+  words.each {|word| @words == word}
+
 end
 
 
