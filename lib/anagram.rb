@@ -10,7 +10,7 @@ class Anagram
 
 
 
-
+# How will you determine if one word is an anagram for another?
 
 # You'll need to iterate over the array of words that the
 # .match method takes as an argument. You will compare each word of that array
@@ -20,9 +20,9 @@ class Anagram
 # of letters using some_word.split(""). You can compare two arrays using the ==. For example:
 
 
-def match(words)
+def match(words_array)
 
-  words.each {|word| @words.split(" ") == word.split(" ")}
+  words_array.each {|word| @words.split(" ").sort == word.split(" ").sort}
 
 end
 
