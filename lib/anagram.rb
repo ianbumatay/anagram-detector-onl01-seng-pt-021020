@@ -22,11 +22,11 @@ class Anagram
 
 def match(words_array)
 
-    new_array = []
 
-    words_array.each do |word|
+
+    words_array.select do |word|
       @word.split(" ").sort == word.split(" ").sort
-      new_array << word
+  
   end
 end
 
