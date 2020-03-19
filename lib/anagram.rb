@@ -2,10 +2,10 @@
 
 class Anagram
 
-  attr_accessor :words
+  attr_accessor :word
 
   def initializ
-  @words = word
+  @word = word
   end
 
 
@@ -22,7 +22,9 @@ class Anagram
 
 def match(words_array)
 
-  words_array.select {|word| @words.split(" ").sort == word.split(" ").sort}
+  words_array.select  do |word|
+    @word.split(" ").sort == word.split(" ").sort
+  end
 
 end
 
