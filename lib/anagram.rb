@@ -22,7 +22,7 @@ class Anagram
 
 def match(words_array)
 
-  words_array.each {|word| @words.split(" ").sort == word.split(" ").sort}
+  words_array.select {|word| @words.split(" ").sort == word.split(" ").sort}
 
 end
 
